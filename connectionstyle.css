@@ -167,6 +167,13 @@
         font-weight: 500;
         font-style: normal;
     }
+    
+    .video-container {
+        display: flex;
+        justify-content: center; /* Centers the video */
+        margin: 20px 0; /* Adjust spacing */
+      }
+      
 
     /* #retry-button {
         display: block;
