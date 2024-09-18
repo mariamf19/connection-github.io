@@ -1,123 +1,185 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>connection</title>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-  <link rel="preload" href="PearlJean.woff2" as="font" type="font/woff2" crossorigin>
-  <link href="font/PearlJean/stylesheet.css" rel="stylesheet" type="text/css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="connectionstyle.css">
-</head>
-<body>
 
-<!-- Links (sit on top) -->
-<div class="w3-top">
-  <div class="w3-row w3-padding">
-    <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block">HOME</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#about" class="w3-button w3-block">ABOUT ME</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#video" class="w3-button w3-block">VIDEO</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#story" class="w3-button w3-block">STORY</a>
-    </div>
-  </div>
-</div>
+.quicksand-font{
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 
-<!-- Header with game -->
-<header class="bgcolor w3-display-container" id="home">
-    <div class="w3-display-middle w3-center">
-      <h1 class="w3-text-white main-heading">connection.</h1>
-      <h2 class="sub-heading">exploring the balance between humans and nature</h2>
-      <div class="game-grid" id="game-board"></div>
-      <div id="instructions" class="w3-container w3-center w3-padding-32">
-        <p>click on words to group them into their respective categories. try to find all the correct groups!</p>
-      </div>
-      <p id="message"></p>
-      <button id="retry-button">Retry</button>
-    </div>
-</header>
+.work-sans-font{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+    body, html {
+      height: 100%;
+      font-family: "Work Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+      background-color: #1b1f3b;
+    }
 
-<!-- About Me Section -->
-<div class="w3-container" id="about" style="color:#1b1f3b;">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64" style="font-size: 32px;"><span style="color:#f6bd60;">ABOUT ME</span></h5>
-    <p>Hey! I’m Mariam Fatima. I'm an Interactive Media student at NYUAD. This field fascinates me because it's all about blending technology and art in ways that make us see the world differently. I'm constantly amazed by how interactive experiences can bridge the gap between us and, well, everything else. Whether it's using VR to explore far-off ecosystems or creating interactions that reveal the threads that tie us all together. This interest drives my creative and academic work, as I seek to uncover new ways to engage with the world through media.</p>
-  </div>
-</div>
+    .bgcolor {
+      background-color: #f6bd60;
+      color: #44485f; 
+      min-height: 95%;
+    }
 
-<!-- Video Section -->
-<div class="w3-container" id="video" style="background-color:#1b1f3b;">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64" style="font-size: 32px;"><span style="color:#f6bd60;">VIDEO</span></h5>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/003ihv0AUPc?si=7aVprTcXPI22nBcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
-</div>
+    h1.w3-text-white.main-heading {
+      color: #1b1f3b !important; /* Dark blue for h1 */
+      font-family: "Quicksand", sans-serif;
+      margin-top: 150px;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 50px !important; /* Ensure large font size */
+    }
 
-<!-- Story Section -->
-<div class="w3-container" id="story" style="background-color:#1b1f3b;">
-    <div class="w3-content" style="max-width:700px">
-      <h5 class="w3-center w3-padding-64" style="font-size: 32px;"><span style="color:#f6bd60;">STORY</span></h5>
-      <p>
-          When I set out to make this video, I had no clue where this was headed, but inspiration struck out of nowhere, I saw a sign right outside our classroom that seemed perfect for my theme.
-          It read, "The relationship between humans and non-humans." Immediately, I had this idea buzzing in my head about how we're all connected - not just to each other, but to everything around us.
-          
-          There's this part where I filmed a piano playing. It got me thinking about how music touches something in us that we can't quite put into words. Then I caught a clock ticking away, and it hit me how time is this invisible thread running through all our experiences.
-          
-          One of my favorite bits is when I filmed my friend petting a cat. It's such a small thing, but it shows how we connect with other creatures without even thinking about it. There's also this shot of the cat just chilling on a table, like it's part of our world but in its own little bubble too.
-          
-          I caught my friend taking a picture of some artwork, and it struck me as this very human thing - trying to hold onto moments that move us. Then there's this clip from a music video that really messes with your head about what's human and what isn't.
-          
-          I got some footage of me walking around campus, which might sound boring, but it shows how we're always moving through spaces, leaving our mark and being shaped by them too. 
-          
-          To wrap it up, I zoomed in on my desk on which i keep all my keepsakes. It's like a map of all the connections we make - with people, places, and things that stick with us.
-          
-          Looking back at all these clips, I realized how rich our lives are because of all these connections we make, often without even noticing. That's really what I wanted to show with this video - all those little threads that tie us to the world around us.</p>
-          <h3 class="w3-center w3-padding-16" style="font-size: 24px; color: #f6bd60;">Snapshots of Connection</h3>
+    h2.sub-heading {
+      font-size: 20px; /* Size for subheading */
+      color: #840032; /* Lighter text color for subheading */
+    }
+
+    h2, h3, h5 {
+      color: #f6bd60; /* Yellow for headings */
+      font-family: "Quicksand", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    #instructions {
+        margin-top: 5px;
+        /* color: #1b1f3b !important; */
+        font-size: 18px;
+        text-align: center;
+        font-family: "Work Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
       
-          <div class="w3-content w3-display-container" style="max-width:700px">
-            <!-- Slide 1 -->
-            <div class="mySlides w3-animate-opacity" style="display: block;">
-              <img src="image1.jpg" style="width:100%">
-              <div class="w3-container w3-center">
-                <p style="color: #f6bd60;">A cute octopus stuffed toy. Like most stuffed animals, it's more than just fabric and stuffing - it's a soft reminder of comfort and joy.</p>
-              </div>
-            </div>
-          
-            <!-- Slide 2 -->
-            <div class="mySlides w3-animate-opacity" style="display: none;">
-              <img src="image2.jpg" style="width:100%">
-              <div class="w3-container w3-center">
-                <p style="color: #f6bd60;">A collection of small, gifted objects. These seemingly ordinary items carry the weight of memories and emotions, each telling a story of human connection.</p>
-              </div>
-            </div>
-          
-            <!-- Slide 3 -->
-            <div class="mySlides w3-animate-opacity" style="display: none;">
-              <img src="image3.jpg" style="width:100%">
-              <div class="w3-container w3-center">
-                <p style="color: #f6bd60;">Russian dolls from Baku, a souvenir from a friend's journey. These nested figures link us to places we've never been, bridging distances through shared experiences.</p>
-              </div>
-            </div>
-          
-            <!-- Carousel controls -->
-            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-          </div>
-    </div>
-  </div>
 
-<!-- Footer -->
-<footer class="w3-center w3-footer w3-padding
+    p, span, a {
+      color: #767da2;
+    }
+
+    .w3-top {
+      background-color: #840032;
+
+    }
+
+    .w3-button {
+      color: #f6bd60;
+      background-color: #a4243b;
+      font-family: "Quicksand", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .w3-button:hover {
+      background-color: #f6bd60 !important; /* Light yellow */
+      color: #1b1f3b !important; /* Dark blue text */
+    }
+
+    .w3-footer {
+      height: 20px;
+      background-color: #840032;
+      color: #ffcdb2;
+      font-family: "Work Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    footer a {
+      color: #ffb4a2;
+    }
+
+    footer a:hover {
+      color: #f6bd60;
+    }
+
+    ::selection {
+      background: #ffb4a2;
+      color: #1b1f3b;
+    }
+
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px;
+      max-width: 600px;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+
+    .word {
+      background-color: #1b1f3b;
+      color: #f6bd60;
+      padding: 20px;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 8px;
+      font-family: "Quicksand", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      /* New styles for uniform size */
+      width: 120px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px; /* Adjust as needed */
+      word-wrap: break-word;
+      overflow: hidden;
+    }
+    .word.selected {
+      background-color: #a4243b;
+      color: #ffffff;
+    }
+
+    .word.correct {
+      background-color: #ffb4a2;
+      color: #1b1f3b;
+      pointer-events: none;
+    }
+
+    .hidden-section {
+      display: none;
+    }
+
+    .shown {
+      display: block !important;
+    }
+
+    #message {
+      margin-bottom: 200px;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #a4243b;
+      font-family: "Work Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    /* #retry-button {
+        display: block;
+        margin-top: 20px; 
+        margin-bottom: 100px; 
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #a4243b;
+        color: #f6bd60;
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 18px;
+      } */
+       
